@@ -10,7 +10,7 @@ router.get('/', (req, res, next) => {
     .find()
     .then(function success (result) {
       res.render('home.html', {
-        entries: result
+        home: result
       })
     }).catch(next)
 })

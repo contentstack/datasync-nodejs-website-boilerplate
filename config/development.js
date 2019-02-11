@@ -3,18 +3,19 @@ const config = {
   contentstack: {
     apikey: '',
     deliveryToken: '',
-    locales: [{
-        code: 'en-us',
-        relative_url_prefix: '/'
-      },
-      {
-        code: 'es-es',
-        relative_url_prefix: '/es/'
-      }
-    ]
   },
-  options: {
-
+  locales: [
+    {
+      code: 'en-us',
+      relative_url_prefix: '/'
+    },
+    {
+      code: 'es-es',
+      relative_url_prefix: '/es/'
+    }
+  ],
+  'content-connector': {
+    
   },
   port: '4000'
 }

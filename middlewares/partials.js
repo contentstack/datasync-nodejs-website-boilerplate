@@ -6,7 +6,6 @@ module.exports = (req, res, next) => {
     callback => {
       // Get Header data
       Stack.contentType('header').entries()
-        .includeReferences()
         .find()
         .then(function success (result) {
           callback(null, result);

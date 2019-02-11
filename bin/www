@@ -3,14 +3,13 @@
 /**
  * Module dependencies.
  */
-
-var app = require('../app')
 var debug = require('debug')('my-project:server')
 var http = require('http')
+var path = require('path')
+
+var app = require('../app')
 var env = process.env.NODE_ENV || 'development'
-var config = require('../config/' + env)
-
-
+var config = require(path.join('..', 'config', env))
 
 /**
  * Get port from environment and store in Express.

@@ -31,22 +31,22 @@ const config = {
   sdk: 'contentstack-filesystem-sdk',
   contentstack: {
     apikey: '',
-    accessToken: '',
-    locales: [
-      {
-        code: 'en-us',
-        relative_url_prefix: '/'
-      },
-      {
-        code: 'es-es',
-        relative_url_prefix: '/es/'
-      }
-    ]
+    deliveryToken: '',
   },
+  locales: [
+    {
+      code: 'en-us',
+      relative_url_prefix: '/'
+    },
+    {
+      code: 'es-es',
+      relative_url_prefix: '/es/'
+    }
+  ],
   port: 4000,
-  options: {
-  	base_dir: '../contents'
-  }
+  'content-connector': {
+    baseDir: './_contents'
+  },
 }
 ```
 
@@ -71,7 +71,7 @@ router.get('/contact_us', (req, res, next) => {
     .find()
     .then(function success (result) {
       res.render('contact_us.html', {
-        entries: result
+        contact_us: result
       })
     }).catch(next)
 })
@@ -84,7 +84,7 @@ module.exports = router
 
 ```html
 {% extends "./layout/parent.html" %} {% block main_body %}
-{% set entry = entries.entries[0] %}
+{% set entry = contact_us.entries[0] %}
 
 <div>
     {# Your contact_us title will be rendered #}
@@ -110,21 +110,21 @@ const config = {
   sdk: 'contentstack-mongodb-sdk',
   contentstack: {
     apikey: '',
-    accessToken: '',
-    locales: [
-      {
-        code: 'en-us',
-        relative_url_prefix: '/'
-      },
-      {
-        code: 'es-es',
-        relative_url_prefix: '/es/'
-      }
-    ]
+    deliveryToken: '',
   },
+  locales: [
+    {
+      code: 'en-us',
+      relative_url_prefix: '/'
+    },
+    {
+      code: 'es-es',
+      relative_url_prefix: '/es/'
+    }
+  ],
   port: 4000,
-  options: {
-    url: '',
+  'content-connector': {
+     url: '',
     dbName: ''
   }
 }

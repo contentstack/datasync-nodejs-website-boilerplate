@@ -9,6 +9,7 @@
     "contentstack-mongodb-sdk": "file:modules/contentstack-mongodb-sdk-0.0.2.tgz",
     "contentstack-filesystem-sdk": "file:modules/contentstack-filesystem-sdk-0.0.1.tgz",
     "async": "^2.6.1",
+    "path": "^0.12.7",
     "contentstack": "^3.4.1",
     "debug": "~2.6.9",
     "express": "~4.16.0",

@@ -15,9 +15,9 @@ const config = {
     }
   ],
   contentStore: {
-    
+    baseDir: ''
   },
-  port: '4000'
+  port: 4000
 }
 
 module.exports = config

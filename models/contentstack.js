@@ -5,7 +5,7 @@ const Contentstack = require(config.sdk)
 
 const Stack = Contentstack.Stack(config)
 
-Stack.connect(config['content-connector']).then(() => {
+Stack.connect(config.contentStore).then(() => {
   console.log("Connected")
 }).catch(console.error)
 

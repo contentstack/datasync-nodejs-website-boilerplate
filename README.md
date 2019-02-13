@@ -16,7 +16,7 @@ This demo application will help you get started with setting up `contentstack-sy
 1. Install dependencies by running the following
 
 ```sh
-	$ cd contentstack-sync-boilerplate/
+	$ cd contentstack-sync-utility-boilerplate-website-example
 	$ npm install
 ```
 
@@ -44,13 +44,14 @@ const config = {
     }
   ],
   port: 4000,
-  'content-connector': {
+  contentStore: {
     baseDir: './_contents'
   },
 }
 ```
+3. Import the `header` and `footer` content types from export folder in your stack and publish    the entries. Sync your data using sync-utility to use it in your app.
 
-3. Add your custom Route
+4. Add your custom Route
 
 Routes folder contains all your routes.
 
@@ -83,7 +84,7 @@ module.exports = router
 - Add your template `contact_us.html` in views folder
 
 ```html
-{% extends "./layout/parent.html" %} {% block main_body %}
+{% extends "layout/parent.html" %} {% block main_body %}
 {% set entry = contact_us.entries[0] %}
 
 <div>
@@ -123,7 +124,7 @@ const config = {
     }
   ],
   port: 4000,
-  'content-connector': {
+  contentStore: {
      url: '',
     dbName: ''
   }

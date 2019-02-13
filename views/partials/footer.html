@@ -1,5 +1,8 @@
-{% set footer = footer.entries[0] %}
+{% set footer = footer.entry %}
 
 <footer>
     {# add your footer here using {{ footer.field_name }} #}
+    <div class="footer-sec">
+        {{footer.body}}
+    </div>
 </footer>

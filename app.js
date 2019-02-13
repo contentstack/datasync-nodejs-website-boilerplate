@@ -1,8 +1,8 @@
-const createError = require('http-errors');
-const express = require('express');
-const logger = require('morgan');
-const app = express();
-const nunjucks = require('nunjucks');
+const createError = require('http-errors')
+const express = require('express')
+const logger = require('morgan')
+const app = express()
+const nunjucks = require('nunjucks')
 
 //setting view and nunjuks configuration
 app.set('view engine', 'html')

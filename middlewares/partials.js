@@ -1,28 +1,28 @@
-const async = require('async');
-const Stack = require('../models/contentstack');
+const async = require('async')
+const Stack = require('../models/contentstack')
 
 module.exports = (req, res, next) => {
   async.series([
     callback => {
       // Get Header data
-      Stack.contentType('header').entries()
+      Stack.contentType('header').entry()
         .find()
         .then(function success (result) {
-          callback(null, result);
+          callback(null, result)
         }).catch(callback)
     },
     callback => {
       // Get Footer data
-      Stack.contentType('footer').entries()
+      Stack.contentType('footer').entry()
         .find()
         .then(function success (result) {
-          callback(null, result);
+          callback(null, result)
         }).catch(callback)
     }
   ], (error, success) => {
-    if (error) return next(error);
-    res.locals.header = success[0];
-    res.locals.footer = success[1];
-    next();
+    if (error) return next(error)
+    res.locals.header = success[0]
+    res.locals.footer = success[1]
+    next()
   })
 }

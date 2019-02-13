@@ -1,5 +1,5 @@
 const config = {
-  sdk: '',
+  sdk: 'contentstack-filesystem-sdk',
   contentstack: {
     apikey: '',
     deliveryToken: '',
@@ -14,7 +14,7 @@ const config = {
       relative_url_prefix: '/es/'
     }
   ],
-  'content-connector': {
+  contentStore: {
     
   },
   port: '4000'

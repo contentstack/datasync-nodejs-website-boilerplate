@@ -1,8 +1,8 @@
-const async = require('async')
-const Stack = require('../models/contentstack')
+import { Stack } from '../models/contentstack'
+import { series } from 'async'
 
-module.exports = (req, res, next) => {
-  async.series([
+export const partials = (req, res, next) => {
+  series([
     callback => {
       // Get Header data
       Stack.contentType('header').entry()

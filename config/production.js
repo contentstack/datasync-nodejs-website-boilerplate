@@ -1,4 +1,4 @@
-const config = {
+export const config = {
   sdk: '',
   contentstack: {
     apikey: '',
@@ -17,7 +17,5 @@ const config = {
   contentStore: {
 
   },
-  port: '4001'
+  port: 4001
 }
-
-module.exports = config

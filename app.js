@@ -1,8 +1,9 @@
-const createError = require('http-errors')
-const express = require('express')
-const logger = require('morgan')
+import { createError } from 'http-errors'
+import express from 'express'
+import nunjucks from 'nunjucks'
+import { routes } from './routes'
+
 const app = express()
-const nunjucks = require('nunjucks')
 
 //setting view and nunjuks configuration
 app.set('view engine', 'html')
@@ -12,7 +13,6 @@ nunjucks.configure('views', {
   express: app
 })
 
-app.use(logger('dev'))
 app.use(express.json())
 app.use(express.urlencoded({
   extended: false
@@ -22,7 +22,7 @@ app.use(express.urlencoded({
 app.use('/static', express.static(`${__dirname}/public`))
 
 //requiring routes
-require('./routes')(app)
+routes(app)
 
 // catch 404 and forward to error handler
 app.use((req, res, next) => {
@@ -40,4 +40,5 @@ app.use((err, req, res, next) => {
   res.render('error')
 })
 
-module.exports = app
+
+export default app 

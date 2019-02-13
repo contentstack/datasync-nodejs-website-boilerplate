@@ -1,6 +1,6 @@
-const express = require('express')
-const router = express.Router()
-const Stack = require('../models/contentstack')
+import { Router } from 'express'
+import { Stack } from '../models/contentstack'
+const router = Router();
 
 
 router.get('/', (req, res, next) => {
@@ -15,4 +15,4 @@ router.get('/', (req, res, next) => {
     }).catch(next)
 })
 
-module.exports = router
+export { router }

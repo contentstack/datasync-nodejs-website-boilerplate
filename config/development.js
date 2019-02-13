@@ -1,4 +1,4 @@
-const config = {
+export const config = {
   sdk: 'contentstack-filesystem-sdk',
   contentstack: {
     apikey: '',
@@ -15,9 +15,7 @@ const config = {
     }
   ],
   contentStore: {
-    
+    baseDir: './_contents'
   },
-  port: '4000'
+  port: 4000
 }
-
-module.exports = config

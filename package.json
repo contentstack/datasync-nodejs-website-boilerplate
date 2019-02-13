@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "npm run build && node dist/bin/www",
+    "build": "rimraf dist/ && babel ./ --out-dir dist/ --ignore ./node_modules,./.babelrc,./package.json,./npm-debug.log --copy-files"
   },
   "dependencies": {
     "contentstack-mongodb-sdk": "file:modules/contentstack-mongodb-sdk-0.0.2.tgz",
@@ -19,6 +20,9 @@
     "request": "^2.87.0"
   },
   "devDependencies": {
-    "eslint": "^5.13.0"
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^5.13.0",
+    "rimraf": "^2.6.3"
   }
 }

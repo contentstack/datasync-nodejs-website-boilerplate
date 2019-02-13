@@ -49,7 +49,7 @@ const config = {
   },
 }
 ```
-3. Import the `header` and `footer` content types from export folder in your stack and publish    the entries. Sync your data using sync-utility to use it in your app.
+3. Import the `header` and `footer` content types from schemaNentries folder in your stack and publish    the entries. Sync your data using sync-utility to use it in your app.
 
 4. Add your custom Route
 

@@ -49,15 +49,15 @@ const config = {
   },
 }
 ```
-3. Import the `header` and `footer` content types from schemaNentries folder in your stack and publish    the entries. Sync your data using sync-utility to use it in your app.
+3. Import the `header` and `footer` content types from schemaNentries folder in your stack and           publish the entries. Sync your data using sync-utility to use it in your app.
 
 4. Add your custom Route
 
 Routes folder contains all your routes.
 
-Let's add a route for `contact_us` content type.Considering you have a `contact_us` content type with its entry published.
+Let's add a route for `about` content type.Considering you have a `about` content type with its entry published.We have provided `about` content type in schemaNentries folder. 
 
-- Create a `contact_us.js` file and add route as follow :
+- Create a `about.js` file and add route as follow :
 
 ```js
 const express = require('express');
@@ -65,14 +65,14 @@ const router = express.Router();
 const Stack = require('../models/contentstack');
 
 
-router.get('/contact_us', (req, res, next) => {
-  const contentTypeUID = 'contact_us';
+router.get('/about', (req, res, next) => {
+  const contentTypeUID = 'about';
 
   Stack.contentType(contentTypeUID).entries()
     .find()
     .then(function success (result) {
-      res.render('contact_us.html', {
-        contact_us: result
+      res.render('about.html', {
+        about: result
       })
     }).catch(next)
 })
@@ -81,14 +81,14 @@ module.exports = router
 
 ```
 
-- Add your template `contact_us.html` in views folder
+- Add your template `about.html` in views folder
 
 ```html
 {% extends "layout/parent.html" %} {% block main_body %}
-{% set entry = contact_us.entries[0] %}
+{% set entry = about.entries[0] %}
 
 <div>
-    {# Your contact_us title will be rendered #}
+    {# Your about title will be rendered #}
     <h1>{{ entry.title }}</h1>
 	{# add your body here using {{ entry.field_name }} #}
 </div>

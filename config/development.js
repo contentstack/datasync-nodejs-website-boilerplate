@@ -15,7 +15,7 @@ const config = {
     }
   ],
   contentStore: {
-    baseDir: ''
+    baseDir: './_contents'
   },
   port: 4000
 }

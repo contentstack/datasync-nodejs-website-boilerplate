@@ -6,6 +6,7 @@ module.exports = (req, res, next) => {
     callback => {
       // Get Header data
       Stack.contentType('header').entry()
+        .language(req.code)
         .find()
         .then(function success (result) {
           callback(null, result)
@@ -14,6 +15,7 @@ module.exports = (req, res, next) => {
     callback => {
       // Get Footer data
       Stack.contentType('footer').entry()
+        .language(req.code)
         .find()
         .then(function success (result) {
           callback(null, result)

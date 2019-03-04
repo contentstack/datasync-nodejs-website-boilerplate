@@ -6,8 +6,8 @@
     "start": "node ./bin/www"
   },
   "dependencies": {
-    "contentstack-mongodb-sdk": "file:modules/contentstack-mongodb-sdk-0.0.2.tgz",
-    "contentstack-filesystem-sdk": "file:modules/contentstack-filesystem-sdk-0.0.1.tgz",
+    "contentstack-sync-mongodb-sdk": "file:modules/contentstack-sync-mongodb-sdk-1.0.0.tgz",
+    "contentstack-sync-filesystem-sdk": "file:modules/contentstack-sync-filesystem-sdk-0.0.1.tgz",
     "async": "^2.6.1",
     "path": "^0.12.7",
     "contentstack": "^3.4.1",

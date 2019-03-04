@@ -24,11 +24,11 @@ This demo application will help you get started with setting up `contentstack-sy
 
 By default, the app runs in `development` environment, using `config/development.js`
 
-Config for `contentstack-filesystem-sdk`:
+Config for `contentstack-sync-filesystem-sdk`:
 
 ```js
 const config = {
-  sdk: 'contentstack-filesystem-sdk',
+  sdk: 'contentstack-sync-filesystem-sdk',
   contentstack: {
     apikey: '',
     deliveryToken: '',
@@ -104,11 +104,11 @@ module.exports = router
 
 - Edit `development.js` as follows: 
 
-Config for `contentstack-mongodb-sdk`:
+Config for `contentstack-sync-mongodb-sdk`:
  
 ```js
 const config = {
-  sdk: 'contentstack-mongodb-sdk',
+  sdk: 'contentstack-sync-mongodb-sdk',
   contentstack: {
     apikey: '',
     deliveryToken: '',

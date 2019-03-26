@@ -1,5 +1,5 @@
 const config = {
-  sdk: 'contentstack-sync-filesystem-sdk',
+  sdk: 'datasync-filesystem-sdk',
   contentstack: {
     apikey: '',
     deliveryToken: '',

@@ -1,24 +1,31 @@
 {
-  "name": "my-project",
-  "version": "0.0.0",
+  "name": "datasync-express-sdk-boilerplate",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
     "start": "node ./bin/www"
   },
   "dependencies": {
-    "contentstack-sync-mongodb-sdk": "file:modules/contentstack-sync-mongodb-sdk-1.0.0.tgz",
-    "contentstack-sync-filesystem-sdk": "file:modules/contentstack-sync-filesystem-sdk-0.0.1.tgz",
     "async": "^2.6.1",
-    "path": "^0.12.7",
     "contentstack": "^3.4.1",
+    "datasync-filesystem-sdk":"file:modules/datasync-filesystem-sdk-0.0.1.tgz",
+    "datasync-mongodb-sdk": "file:modules/datasync-mongodb-sdk-0.0.1.tgz",
     "debug": "~2.6.9",
     "express": "~4.16.0",
     "http-errors": "~1.6.2",
     "morgan": "~1.9.0",
+    "npm-git-install": "^0.3.0",
     "nunjucks": "^3.1.3",
+    "path": "^0.12.7",
     "request": "^2.87.0"
   },
   "devDependencies": {
     "eslint": "^5.13.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/contentstack/datasync-nodejs-website-boilerplate"
+  },
+  "author": "Contentstack LLC <support@contentstack.com>",
+  "license": "MIT"
 }

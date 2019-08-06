@@ -8,8 +8,8 @@
   "dependencies": {
     "async": "^2.6.1",
     "contentstack": "^3.4.1",
-    "datasync-filesystem-sdk":"file:modules/datasync-filesystem-sdk-0.0.1.tgz",
-    "datasync-mongodb-sdk": "file:modules/datasync-mongodb-sdk-0.0.1.tgz",
+    "datasync-filesystem-sdk": "git+https://github.com/contentstack/datasync-filesystem-sdk.git",
+    "datasync-mongodb-sdk": "git+https://github.com/contentstack/datasync-mongodb-sdk.git",
     "debug": "~2.6.9",
     "express": "~4.16.0",
     "http-errors": "~1.6.2",

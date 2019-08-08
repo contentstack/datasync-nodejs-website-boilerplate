@@ -9,7 +9,7 @@ var _path = require('path');
 
 var env = process.env.NODE_ENV || 'development';
 var config = require((0, _path.join)('..', 'config', env)).config;
-var Contentstack = require(config.sdk);
+var Contentstack = require(config.sdk).Contentstack;
 
 var Stack = Contentstack.Stack(config);
 

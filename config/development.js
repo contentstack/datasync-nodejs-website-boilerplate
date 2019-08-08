@@ -1,5 +1,5 @@
 export const config = {
-  sdk: 'contentstack-filesystem-sdk',
+  sdk: 'datasync-filesystem-sdk',
   contentstack: {
     apikey: '',
     deliveryToken: '',
@@ -15,7 +15,7 @@ export const config = {
     }
   ],
   contentStore: {
-    baseDir: './_contents'
+    baseDir: '/_contents'
   },
   port: 4000
 }

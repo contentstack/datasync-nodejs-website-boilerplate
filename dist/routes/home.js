@@ -12,9 +12,10 @@ var _contentstack = require('../models/contentstack');
 var router = (0, _express.Router)();
 
 router.get('/', function (req, res, next) {
-  var contentTypeUID = 'home';
+  var contentTypeUID = 'product';
 
   _contentstack.Stack.contentType(contentTypeUID).entries().find().then(function success(result) {
+    console.log(result, "result");
     res.render('home.html', {
       home: result
     });

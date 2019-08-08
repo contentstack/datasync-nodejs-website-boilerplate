@@ -17,7 +17,7 @@ var partials = exports.partials = function partials(req, res, next) {
     }).catch(callback);
   }, function (callback) {
     // Get Footer data
-    _contentstack.Stack.contentType('footer').entry().find().then(function success(result) {
+    _contentstack.Stack.contentType('footer').entry().excludeReferences().find().then(function success(result) {
       callback(null, result);
     }).catch(callback);
   }], function (error, success) {

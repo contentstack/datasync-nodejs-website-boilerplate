@@ -17,5 +17,8 @@ export const config = {
   contentStore: {
     baseDir: '/_contents'
   },
+  assetStore: {
+    baseDir: '/_contents'
+  },
   port: 4000
 }

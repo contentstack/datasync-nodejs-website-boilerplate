@@ -1,14 +1,14 @@
 {
   "name": "my-project",
-  "version": "0.0.0",
+  "version": "0.0.2",
   "private": true,
   "scripts": {
     "start": "npm run build && node dist/bin/www",
     "build": "rimraf dist/ && babel ./ --out-dir dist/ --ignore ./node_modules,./.babelrc,./package.json,./npm-debug.log --copy-files"
   },
   "dependencies": {
-    "datasync-mongodb-sdk": "file:modules/datasync-mongodb-sdk-1.0.2.tgz",
-    "datasync-filesystem-sdk": "file:modules/datasync-filesystem-sdk-1.0.2.tgz",
+    "datasync-filesystem-sdk": "git+https://github.com/contentstack/datasync-filesystem-sdk.git",
+    "datasync-mongodb-sdk": "git+https://github.com/contentstack/datasync-mongodb-sdk.git",
     "async": "^2.6.1",
     "path": "^0.12.7",
     "contentstack": "^3.4.1",

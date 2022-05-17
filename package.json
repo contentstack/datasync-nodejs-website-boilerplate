@@ -3,12 +3,14 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "dependencies": {
     "async": "^2.6.1",
     "contentstack": "^3.4.1",
-    "datasync-filesystem-sdk":"file:modules/datasync-filesystem-sdk-0.0.1.tgz",
+    "datasync-filesystem-sdk": "file:modules/datasync-filesystem-sdk-0.0.1.tgz",
     "datasync-mongodb-sdk": "file:modules/datasync-mongodb-sdk-0.0.1.tgz",
     "debug": "~2.6.9",
     "express": "~4.16.0",
@@ -17,7 +19,8 @@
     "npm-git-install": "^0.3.0",
     "nunjucks": "^3.1.3",
     "path": "^0.12.7",
-    "request": "^2.87.0"
+    "request": "^2.87.0",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "eslint": "^5.13.0"
@@ -27,5 +30,6 @@
     "url": "https://github.com/contentstack/datasync-nodejs-website-boilerplate"
   },
   "author": "Contentstack LLC <support@contentstack.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "snyk": true
 }

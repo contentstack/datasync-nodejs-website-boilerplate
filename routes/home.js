@@ -2,7 +2,7 @@ const express = require('express')
 const router = express.Router()
 const Stack = require('../models/contentstack')
 
-router.get('/', (req, res, next) => {
+router.get('/:prefix?', (req, res, next) => {
   const contentTypeUID = 'header'
 
   Stack.contentType(contentTypeUID).entries()

@@ -2,9 +2,8 @@ const express = require('express')
 const router = express.Router()
 const Stack = require('../models/contentstack')
 
-
 router.get('/:prefix?', (req, res, next) => {
-  const contentTypeUID = 'home'
+  const contentTypeUID = 'header'
 
   Stack.contentType(contentTypeUID).entries()
     .language(req.code)

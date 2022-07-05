@@ -15,7 +15,8 @@ const config = {
     }
   ],
   contentStore: {
-    baseDir: './_contents'
+    baseDir: './_contents',
+    locale: 'en-us'
   },
   port: 4000
 }

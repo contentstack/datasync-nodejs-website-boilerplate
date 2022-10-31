@@ -1,20 +1,18 @@
-<!doctype html>
-<html>
-    <meta charset="utf-8">
-    <!-- <title>{{ entry.title }}</title> -->
-    <head> 
-
-		<link rel="stylesheet" href="../static/css/style.css" type="text/css" media="all" />
-		<script type="text/javascript" src="../static/js/script.js"></script>
-	
-    </head>
-    <body>
-
-        {% include "partials/header.html" %}
-         
-        {% block main_body %} {% endblock %}
-        
-        {% include "partials/footer.html" %}
-        
-    </body>
+<!DOCTYPE html>
+<html lang="EN" xml:lang="en">
+  <meta charset="utf-8" />
+  <title>Datasync-nodejs-boilerplate</title>
+  <head>
+    <link
+      rel="stylesheet"
+      href="../static/css/style.css"
+      type="text/css"
+      media="all"
+    />
+    <script type="text/javascript" src="../static/js/script.js"></script>
+  </head>
+  <body>
+    {% include "partials/header.html" %} {% block main_body %} {% endblock %} {%
+    include "partials/footer.html" %}
+  </body>
 </html>

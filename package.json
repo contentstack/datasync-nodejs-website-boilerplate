@@ -6,7 +6,7 @@
     "start": "node ./bin/www"
   },
   "dependencies": {
-    "async": "^2.6.4",
+    "async": "^3.2.4",
     "contentstack": "^3.11.0",
     "datasync-filesystem-sdk":"file:modules/datasync-filesystem-sdk-1.0.2.tar.gz",
     "datasync-mongodb-sdk": "file:modules/datasync-mongodb-sdk-0.0.1.tgz",

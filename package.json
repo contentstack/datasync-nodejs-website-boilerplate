@@ -1,6 +1,6 @@
 {
   "name": "datasync-express-sdk-boilerplate",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "private": true,
   "scripts": {
     "start": "node ./bin/www"
@@ -8,7 +8,7 @@
   "dependencies": {
     "async": "^2.6.4",
     "contentstack": "^3.11.0",
-    "datasync-filesystem-sdk":"file:modules/datasync-filesystem-sdk-1.0.2.tar.gz",
+    "datasync-filesystem-sdk": "file:modules/datasync-filesystem-sdk-1.0.2.tar.gz",
     "datasync-mongodb-sdk": "file:modules/datasync-mongodb-sdk-0.0.1.tgz",
     "debug": "~2.6.9",
     "express": "~4.17.3",

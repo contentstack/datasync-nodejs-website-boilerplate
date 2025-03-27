@@ -1,16 +1,16 @@
 {
   "name": "datasync-nodejs-sdk-boilerplate",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "private": true,
   "scripts": {
     "start": "node ./bin/www"
   },
   "dependencies": {
+    "@contentstack/datasync-filesystem-sdk": "^1.0.16",
+    "@contentstack/datasync-mongodb-sdk": "^1.0.10",
     "async": "^3.2.6",
     "chokidar": "^3.6.0",
     "contentstack": "^3.24.1",
-    "datasync-filesystem-sdk": "file:modules/datasync-filesystem-sdk-1.0.15.tgz",
-    "datasync-mongodb-sdk": "file:modules/datasync-mongodb-sdk-1.0.8.tgz",
     "debug": "~3.2.7",
     "express": "^4.21.2",
     "http-errors": "~2.0.0",

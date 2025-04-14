@@ -1,8 +1,21 @@
 const createError = require('http-errors')
 const express = require('express')
 const logger = require('morgan')
+const rateLimit = require('express-rate-limit')
 const app = express()
 const nunjucks = require('nunjucks')
+const helmet = require('helmet');
+
+app.use(helmet());
+
+const limiter = rateLimit({
+  windowMs: 15 * 60 * 1000,
+  max: 100,
+  message: 'Too many requests from this IP, please try again after 15 minutes',
+  standardHeaders: true,
+  legacyHeaders: false,
+})
+app.use(limiter)
 
 //setting view and nunjuks configuration
 app.set('view engine', 'html')

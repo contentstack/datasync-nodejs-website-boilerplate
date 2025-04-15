@@ -6,8 +6,8 @@
     "start": "node ./bin/www"
   },
   "dependencies": {
-    "@contentstack/datasync-filesystem-sdk": "^1.0.16",
-    "@contentstack/datasync-mongodb-sdk": "^1.0.10",
+    "@contentstack/datasync-filesystem-sdk": "^1.0.17",
+    "@contentstack/datasync-mongodb-sdk": "^1.0.11",
     "async": "^3.2.6",
     "chokidar": "^3.6.0",
     "contentstack": "^3.24.1",

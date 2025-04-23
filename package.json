@@ -1,27 +1,28 @@
 {
   "name": "datasync-nodejs-sdk-boilerplate",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "pre-commit": "husky install && husky && chmod +x .husky/pre-commit"
   },
   "dependencies": {
-    "async": "^2.6.4",
-    "chokidar": "^3.5.3",
-    "contentstack": "^3.11.0",
-    "datasync-filesystem-sdk": "file:modules/datasync-filesystem-sdk-1.0.11.tgz",
-    "datasync-mongodb-sdk": "file:modules/datasync-mongodb-sdk-1.0.4.tgz",
-    "debug": "~3.1.0",
-    "express": "^4.18.2",
-    "http-errors": "~1.6.2",
-    "morgan": "~1.9.1",
-    "npm-git-install": "^0.3.0",
+    "@contentstack/datasync-filesystem-sdk": "^1.0.17",
+    "@contentstack/datasync-mongodb-sdk": "^1.0.11",
+    "async": "^3.2.6",
+    "chokidar": "^3.6.0",
+    "contentstack": "^3.24.1",
+    "debug": "~3.2.7",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.1.5",
+    "http-errors": "~2.0.0",
+    "morgan": "~1.10.0",
     "nunjucks": "^3.2.4",
-    "path": "^0.12.7",
-    "request": "^2.88.0"
+    "path": "^0.12.7"
   },
   "devDependencies": {
-    "eslint": "^5.13.0"
+    "eslint": "^5.16.0",
+    "husky": "^9.1.7"
   },
   "repository": {
     "type": "git",

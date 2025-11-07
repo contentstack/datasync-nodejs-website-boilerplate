@@ -4,14 +4,16 @@ const logger = require('morgan')
 const rateLimit = require('express-rate-limit')
 const app = express()
 const nunjucks = require('nunjucks')
-const helmet = require('helmet');
+const helmet = require('helmet')
+const path = require('path')
+const messages = require(path.join(__dirname, 'config', 'messages'))
 
 app.use(helmet());
 
 const limiter = rateLimit({
   windowMs: 15 * 60 * 1000,
   max: 100,
-  message: 'Too many requests from this IP, please try again after 15 minutes',
+  message: messages.errors.rateLimitExceeded,
   standardHeaders: true,
   legacyHeaders: false,
 })

@@ -10,6 +10,7 @@ var path = require('path')
 var app = require('../app')
 var env = process.env.NODE_ENV || 'development'
 var config = require(path.join('..', 'config', env))
+var messages = require(path.join('..', 'config', 'messages'))
 
 /**
  * Get port from environment and store in Express.
@@ -68,11 +69,11 @@ function onError (error) {
   // handle specific listen errors with friendly messages
   switch (error.code) {
   case 'EACCES':
-    console.error(bind + ' requires elevated privileges')
+    console.error(messages.errors.portElevatedPrivileges(bind))
     process.exit(1)
     break
   case 'EADDRINUSE':
-    console.error(bind + ' is already in use');
+    console.error(messages.errors.portInUse(bind))
     process.exit(1)
     break
   default:

@@ -1,19 +1,19 @@
 {
   "name": "datasync-nodejs-sdk-boilerplate",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
     "pre-commit": "husky install && husky && chmod +x .husky/pre-commit"
   },
   "dependencies": {
-    "@contentstack/datasync-filesystem-sdk": "^1.0.17",
-    "@contentstack/datasync-mongodb-sdk": "^1.0.11",
+    "@contentstack/datasync-filesystem-sdk": "^1.5.1",
+    "@contentstack/datasync-mongodb-sdk": "^1.0.12",
     "async": "^3.2.6",
-    "chokidar": "^3.6.0",
+    "chokidar": "^4.0.3",
     "contentstack": "^3.24.1",
     "debug": "~3.2.7",
-    "express": "^4.21.2",
+    "express": "^4.22.1",
     "express-rate-limit": "^7.1.5",
     "http-errors": "~2.0.0",
     "morgan": "~1.10.1",

@@ -10,7 +10,7 @@
     "@contentstack/datasync-filesystem-sdk": "^1.5.1",
     "@contentstack/datasync-mongodb-sdk": "^1.0.12",
     "async": "^3.2.6",
-    "chokidar": "^4.0.3",
+    "chokidar": "^5.0.0",
     "contentstack": "^3.24.1",
     "debug": "~3.2.7",
     "express": "^5.2.1",

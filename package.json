@@ -7,8 +7,8 @@
     "pre-commit": "husky install && husky && chmod +x .husky/pre-commit"
   },
   "dependencies": {
-    "@contentstack/datasync-filesystem-sdk": "1.5.1",
-    "@contentstack/datasync-mongodb-sdk": "^1.0.12",
+    "@contentstack/datasync-filesystem-sdk": "1.5.2",
+    "@contentstack/datasync-mongodb-sdk": "^1.0.14",
     "async": "^3.2.6",
     "contentstack": "^3.24.1",
     "debug": "~3.2.7",

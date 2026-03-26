@@ -14,9 +14,9 @@ fi
 
 CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD)
 
-# Skip main/master/development - no need to merge base into these
+# Skip main/master - no need to merge base into these
 case "$CURRENT_BRANCH" in
-  main|master|development) exit 0 ;;
+  main|master) exit 0 ;;
 esac
 
 # Only run when current branch does not exist on origin (treat as new local branch)

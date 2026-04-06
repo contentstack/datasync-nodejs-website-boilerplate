@@ -1,6 +1,6 @@
 {
   "name": "datasync-nodejs-sdk-boilerplate",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
@@ -28,5 +28,8 @@
     "url": "https://github.com/contentstack/datasync-nodejs-website-boilerplate"
   },
   "author": "Contentstack LLC <support@contentstack.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "overrides": {
+    "lodash": "^4.18.1"
+  }
 }

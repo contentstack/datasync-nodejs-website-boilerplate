@@ -7,13 +7,13 @@
     "pre-commit": "husky install && husky && chmod +x .husky/pre-commit"
   },
   "dependencies": {
-    "@contentstack/datasync-filesystem-sdk": "1.5.2",
-    "@contentstack/datasync-mongodb-sdk": "^1.0.14",
+    "@contentstack/datasync-filesystem-sdk": "1.5.3",
+    "@contentstack/datasync-mongodb-sdk": "^1.0.15",
     "async": "^3.2.6",
-    "contentstack": "^3.24.1",
+    "contentstack": "^3.27.0",
     "debug": "~3.2.7",
     "express": "^5.2.1",
-    "express-rate-limit": "^7.1.5",
+    "express-rate-limit": "^7.5.1",
     "http-errors": "~2.0.0",
     "morgan": "~1.10.1",
     "nunjucks": "^3.2.4",

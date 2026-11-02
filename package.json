@@ -1,6 +1,6 @@
 {
   "name": "datasync-nodejs-sdk-boilerplate",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
@@ -10,12 +10,12 @@
     "@contentstack/datasync-filesystem-sdk": "1.5.3",
     "@contentstack/datasync-mongodb-sdk": "^1.0.15",
     "async": "^3.2.6",
-    "contentstack": "^3.27.0",
+    "contentstack": "^3.27.1",
     "debug": "~3.2.7",
-    "express": "^5.2.1",
+    "express": "^5.3.0",
     "express-rate-limit": "^7.5.1",
-    "http-errors": "~2.0.0",
-    "morgan": "~1.11.0",
+    "http-errors": "~2.0.1",
+    "morgan": "~1.12.1",
     "nunjucks": "^3.2.4",
     "path": "^0.12.7"
   },
@@ -31,6 +31,6 @@
   "license": "MIT",
   "overrides": {
     "lodash": "^4.18.1",
-    "qs": "^6.15.2"
+    "qs": "^6.17.1"
   }
 }
